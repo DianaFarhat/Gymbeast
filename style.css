@@ -77,11 +77,28 @@ body {
 }
 
 /* Home Page */
+/* Top Grey Bar */
+#top-bar{
+  width: 100%;
+  background-color: #E3E6F3;
+  margin-top: 3vh;
+  text-align: center;
+  padding: 10px 0;
+}
+#top-bar a {
+  color: #000;              
+  text-decoration: none;    
+  font-size: 14px;          
+}
+
+#top-bar a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
 /* NavBar */
+
 #header {
+  background-color: white;
   padding: 10px 20px;
-  background: #E3E6F3;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
   top: 0;
@@ -90,6 +107,7 @@ body {
 
 .navbar-brand .image-logo {
   max-width: 150px;
+  
 }
 
 #navbar {
@@ -111,7 +129,7 @@ body {
 
 #navbar li a.active,
 #navbar li a:hover {
-  color: #088178;
+  color: #d41935;
 }
 
 #navbar li a:hover::after,
@@ -119,7 +137,7 @@ body {
   content: '';
   width: 50%;
   height: 2px;
-  background: #088178;
+  background: #d41935;
   position: absolute;
   bottom: -4px;
   left: 10px;
@@ -179,13 +197,13 @@ body {
 }
 
 #hero h1 {
-  color: #088178;
+  color: #d41935;
 }
 
 #hero button {
   background-image: url("assets/images/button.png");
   background-color: transparent;
-  color: #088178;
+  color: #d41935;
   border: 0;
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
@@ -225,7 +243,7 @@ body {
   padding: 9px 8px 6px 8px;
   line-height: 1;
   border-radius: 4px;
-  color: #088178;
+  color: #d41935;
   background-color: #fddde4;
 }
 
@@ -309,7 +327,7 @@ body {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
-  color: #088178;
+  color: #d41935;
 }
 
 #product1 .pro .cart {
@@ -319,7 +337,7 @@ body {
   border-radius: 50px;
   background-color: 3E8F6EA;
   font-weight: 500;
-  color: #088178;
+  color: #d41935;
   border: 1px solid #cce7d0;
   position: absolute;
   bottom: 20px;
@@ -356,7 +374,7 @@ body {
 }
 
 #banner button:hover {
-  background: #088178;
+  background: #d41935;
   color: #fff;
 }
 
@@ -423,8 +441,8 @@ body {
 
 #sm-banner .banner-box:hover button,
 #sm-banner .banner-box2:hover button {
-  background-color: #088178;
-  border: 1px solid #088178;
+  background-color: #d41935;
+  border: 1px solid #d41935;
 }
 
 /* Banner Three */
@@ -506,8 +524,8 @@ body {
 
 #banner-three .banner-box:hover button,
 #banner-three .banner-box2:hover button {
-  background-color: #088178;
-  border: 1px solid #088178;
+  background-color: #d41935;
+  border: 1px solid #d41935;
 }
 
 /* News Letter */
@@ -552,7 +570,7 @@ body {
 }
 
 #newsletter button {
-  background-color: #088178;
+  background-color: #d41935;
   color: #fff;
   white-space: nowrap;
   border-top-left-radius: 0;
@@ -616,7 +634,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #088178;
+  color: #d41935;
 }
 
 footer .follow .icon {
@@ -633,13 +651,13 @@ footer .follow .icon i {
 }
 
 footer .follow .icon i:hover {
-  color: #088178;
+  color: #d41935;
 }
 
 footer .install .row img {
   width: 120px;
   margin: 5px 10px;
-  border: 1px solid #088178;
+  border: 1px solid #d41935;
   border-radius: 6px;
   padding: 0;
 }
@@ -704,7 +722,7 @@ footer .copyright {
 
 #pagination a {
   text-decoration: none;
-  background-color: #088178;
+  background-color: #d41935;
   padding: 15px 20px;
   border-radius: 4px;
   color: #fff;
@@ -773,7 +791,7 @@ footer .copyright {
 }
 
 #prodetails .single-pro-details button {
-  background: #088178;
+  background: #d41935;
   color: #fff;
 }
 
@@ -849,11 +867,11 @@ footer .copyright {
 }
 
 #blog .blog-details a:hover {
-  color: #088178;
+  color: #d41935;
 }
 
 #blog .blog-details a:hover::after {
-  background-color: #088178;
+  background-color: #d41935;
 }
 
 #blog .blog-box h1 {
