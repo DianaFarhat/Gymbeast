@@ -13,6 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://vjs.zencdn.net/8.16.1/video-js.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -22,10 +23,10 @@
         </div>
     </section>
     <section id="header">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="image-logo" src="assets/icons/logo.png" alt="Logo">
                 </a>
                 <!-- Toggle button for mobile view -->
@@ -36,10 +37,8 @@
                 </button>
                 <!-- Navbar Links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto text-center" id="navbar">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
+                    
+                    <ul class="navbar-nav" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" href="shop.html">Shop</a>
                         </li>
@@ -58,55 +57,58 @@
                         <li class="nav-item">
                             <a class="nav-link" href="">Accessories</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="sign-in.html">
-                                <i class="fas fa-user-circle"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cart.html">
-                                <i class="fa-solid fa-bag-shopping"></i>
-                            </a>
-                        </li>
                     </ul>
+                    
+                    <div class="navbar-nav ms-auto">
+                        <!-- Search Bar -->
+                        <form class="search-form me-3">
+                            <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn search-btn" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+    
+                        <!--Icons-->
+                        <ul class="navbar-nav" id="navbar-icons">
+                            <li class="nav-item">
+                                <a class="nav-link" href="sign-in.html">
+                                    <i class="fas fa-user-circle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cart.html">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </section>
 
-    <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Super value deals</h2>
-        <h1>On all products</h1>
-        <p>Save more with coupons & up to 70% off!</p>
-        <button>Shop Now</button>
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="assets/images/features/f1.png">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="assets/images/features/f2.png">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="assets/images/features/f3.png">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="assets/images/features/f4.png">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="assets/images/features/f5.png">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="assets/images/features/f6.png">
-            <h6>Free Shipping</h6>
-        </div>
+    <section>
+        <video
+            id="home-video"
+            class="video-js"
+            autoplay
+            loop
+            muted
+            playsinline 
+            controlslist="nodownload noremoteplayback nofullscreen"
+            preload="auto"
+            poster="MY_VIDEO_POSTER.jpg"
+            data-setup="{}"
+        >
+        <source src="assets/videos/home-video.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+        >
+        </p>
+        </video>
     </section>
 
     <section id="product1" class="section-p1">
@@ -504,6 +506,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://vjs.zencdn.net/8.16.1/video.min.js"></script>    
 </body>
 
 </html>
