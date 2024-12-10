@@ -14,16 +14,26 @@ if (close) {
   });
 }
 
-function loadNavbar(){
+
+function loadNavbarAndFooter() {
   document.addEventListener("DOMContentLoaded", function() {
-    var header = document.getElementById("header");
-    fetch("nav.html")
-    .then(response => response.text())
-    .then(data => {
-        header.innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error loading nav.html:', error);
-    });
-});
+    fetch("shared_layout.html")
+      .then(response => response.text())
+      .then(data => {
+        // Create a temporary DOM parser
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, "text/html");
+
+        // Extract and insert navbar and footer content
+        const navbar = doc.querySelector("nav").outerHTML;
+        const footer = doc.querySelector("footer").outerHTML;
+
+        // Inject into respective sections
+        document.getElementById("header").innerHTML = navbar;
+        document.getElementById("footer").innerHTML = footer;
+      })
+      .catch(error => {
+        console.error('Error loading shared_layout.html:', error);
+      });
+  });
 }
