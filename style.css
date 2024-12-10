@@ -267,6 +267,9 @@ body {
   text-align: center;
 }
 
+.card-body{
+  text-align: left;
+}
 #product1 .pro-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -315,6 +318,18 @@ body {
  
 }
 
+.og-price{
+  font-size: 14px;
+  color: #606063;
+  padding-top: 7px;
+  text-decoration:line-through;
+}
+
+.product-discount{
+  font-size: 14px;
+  color: #18be5d;
+  padding-top: 7px;
+}
 /* Product Brand */
 .product-brand {
   color: #606063; /* Match description color */
