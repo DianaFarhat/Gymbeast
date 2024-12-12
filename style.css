@@ -343,12 +343,44 @@ body {
   font-size: 14px; /* Same size as brand and description */
   color: #000;
   margin: 3px 0;
-  font-weight: 400; /* Normal weight */
+  font-weight: 400; 
 }
 
 /* =============================== */
 /*          Shop Page             */
 /* =============================== */
+
+/* Shop Header */
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+
+.category-title {
+  font-weight: bold;
+}
+  
+
+
+.filter-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.filter-toggle-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 
 
 /* =============================== */

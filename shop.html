@@ -23,6 +23,28 @@
     </section>
     <section id="header"></section>
     
+    <div class="shop-header">         
+        <h3 class="category-title">Category</h3>         
+        <button class="filter-toggle-button" onclick="toggleFilters()">
+          <span>Hide Filters</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="14" y2="6" />
+              <circle cx="18" cy="6" r="2" />
+              <line x1="4" y1="12" x2="10" y2="12" />
+              <circle cx="14" cy="12" r="2" />
+              <line x1="4" y1="18" x2="14" y2="18" />
+              <circle cx="18" cy="18" r="2" />
+            </g>
+          </svg>              
+        </button>
+      </div>       
+      
+      <div id="filters-sidebar" class="filters-sidebar hidden">
+        <!-- Filter options go here -->
+      </div>
+    </div>  
+      
     <section id="product1" class="section-p1 container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col">
