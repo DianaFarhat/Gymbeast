@@ -381,6 +381,10 @@ body {
   fill: currentColor;
 }
 
+.filters-sidebar{
+  width: 30px;
+  background-color: #18be5d;
+}
 
 
 /* =============================== */
