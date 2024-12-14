@@ -47,42 +47,37 @@
       
     <section id="product1" class="section-p1 container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <div class="col">
-                <div class="pro card h-100">
-                    <img src="assets/images/products/n1.png" class="card-img-top">
+            <template id="product-template">
+                <div class="col">
+                  <div class="pro card h-100">
+                    <img src="" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="product-name card-title">Morehouse Pegasus 41</h5>
-                        <p class="product-description card-text">Men's Nike College Road Running Shoes</p>
-                        <span class="product-brand text-muted">Nike</span>
-                        <h4 class="product-price">$78</h4>
+                      <h5 class="product-name card-title"></h5>
+                      <p class="product-description card-text"></p>
+                      <span class="product-brand text-muted"></span>
+                      <h4 class="product-price"></h4>
                     </div>
+                  </div>
                 </div>
-            </div>
-    
-            <div class="col">
-                <div class="pro card h-100">
-                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1707c98c-3a3f-401e-bad3-0819d9e24168/W+NK+DF+ZENVY+HR+FLARE.png" class="card-img-top">
+            </template>
+            
+            <template id="discounted-product-template">
+                <div class="col">
+                  <div class="pro card h-100">
+                    <img src="" class="card-img-top">
                     <div class="card-body">
-                        <h5 class="product-name card-title">Nike Zenvy Strappy</h5>
-                        <p class="product-description card-text">Women's High-Waisted Flared Leggings</p>
-                        <span class="product-brand text-muted">Nike</span>
-                        <h4 class="product-price">$114</h4>
+                      <h5 class="product-name card-title"></h5>
+                      <p class="product-description card-text"></p>
+                      <span class="product-brand text-muted"></span>
+                      <h4 class="product-price">
+                        <span class="discounted-price"></span>
+                        <span class="og-price"></span>
+                      </h4>
+                      <h4 class="product-discount"></h4>
                     </div>
+                  </div>
                 </div>
-            </div>
-    
-            <div class="col">
-                <div class="pro card h-100">
-                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/917a639b-575d-4423-b540-5c4c8c2a761e/W+NK+INF+DF+LS+TOP+SHEER.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="product-name card-title">Nike Zenvy</h5>
-                        <p class="product-description card-text">Women's Dri-FIT Long-Sleeve Top</p>
-                        <span class="product-brand text-muted">Nike</span>
-                        <h4 class="product-price">$85 <span class="og-price">  $120</span></h4>
-                        <h4 class="product-discount">25% off</h4>
-                    </div>
-                </div>
-            </div>
+            </template>
         </div>
     </section>
     
@@ -95,7 +90,7 @@
     <script>
       loadNavbarAndFooter()
     </script> 
-     
+    <script type="module" src="productDisplay.js"></script>
 </body>
 
 </html>

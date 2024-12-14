@@ -1,0 +1,182 @@
+[
+  {
+    "productId": "001",
+    "productName": "Nike Sportswear Club",
+    "description":"Men's T-Shirt" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type": ["Graphic T-Shirt", "Short Sleeve Shirts"],
+    "fit": "Standard",
+    "stock": {
+      "grey": { "M": 10, "L": 10, "S": 10 },
+      "blue": { "M": 10, "L": 3, "S": 4 }
+    },
+    "price": 50,
+    "discount": 0.2,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-0efe3eb2-788a-4ba4-9b55-2513ec5ceb4a/M+NSW+CLUB+TEE.png",
+      "blue": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/pkhhzbog65ezgmmh85wv/M+NSW+CLUB+TEE.png"
+    },
+    "gender":  ["Male"]
+  },
+  {
+    "productId": "002",
+    "productName": "Nike Sportswear Club",
+    "description":"Men's Crew-Neck Sweater" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type":["Long Sleeve Shirts"] ,
+    "fit": "Standard",
+    "stock": {
+      "grey": { "M": 10, "L": 10, "S": 10 },
+      "blue": { "M": 10, "L": 3, "S": 4 }
+    },
+    "price": 50,
+    "discount": 0.2,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "white": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c93f59da-499f-46ef-8d4a-7442e475e365/M+NK+CLUB+CREW+SWEATER.png",
+      "blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/937c85a6-3298-4948-882e-d243fdd95d22/M+NK+CLUB+CREW+SWEATER.png"
+    },
+    "gender":  ["Male"]
+  },
+  {
+    "productId": "003",
+    "productName": "Nike Pro",
+    "description":"Men's Dri-FIT Slim Sleeveless Top" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type":["Sleeveless & Tank Tops"] ,
+    "fit": "Tight",
+    "stock": {
+      "grey": { "M": 9, "L": 7, "S": 10 },
+      "red": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 50,
+    "discount": 0.2,
+    "brand": "Nike Pro",
+    "collections":"Nike Pro",
+    "imageURLs": {
+      "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4488b4cc-1245-48c5-b3c3-9a7d004cdaab/M+NP+DF+SLIM+TOP+SL.png",
+      "red": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9426c1a1-a4e5-480d-aedd-6ca6e2f088c2/M+NP+DF+SLIM+TOP+SL.png"
+    },
+    "gender":  ["Male"]
+  },
+  {
+    "productId": "004",
+    "productName": "Nike Pro",
+    "description":"Men's Dri-FIT Slim Sleeveless Top" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type":["Sleeveless & Tank Tops"] ,
+    "fit": "Tight",
+    "stock": {
+      "grey": { "M": 9, "L": 7, "S": 10 },
+      "red": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 50,
+    "discount": 0.2,
+    "brand": "Nike Pro",
+    "collections":"Nike Pro",
+    "imageURLs": {
+      "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4488b4cc-1245-48c5-b3c3-9a7d004cdaab/M+NP+DF+SLIM+TOP+SL.png",
+      "red": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9426c1a1-a4e5-480d-aedd-6ca6e2f088c2/M+NP+DF+SLIM+TOP+SL.png"
+    },
+    "gender":  ["Male"]
+  },
+  {
+    "productId": "005",
+    "productName": "Jordan Dri-FIT Sport",
+    "description":"Men's Golf Polo" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type":["Polos", "Short Sleeve Shirts"] ,
+    "fit": "Standard",
+    "stock": {
+      "black": { "M": 9, "L": 7, "S": 10 },
+      "white": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 50,
+    "discount": 0.2,
+    "brand": "Jordan",
+    "collections":"Nike Pro",
+    "imageURLs": {
+      "black": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9f6c7229-1461-4c38-9bb7-19eca7f7f0f7/M+J+DF+SPRT+GLF+POLO.png",
+      "white": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5e1617ae-22c3-40b5-9ae4-909ac04b67c0/M+J+DF+SPRT+GLF+POLO.png"
+    },
+    "gender": ["Male", "Unisex"]
+  },
+  {
+    "productId": "006",
+    "productName": "Nike Club Fleece",
+    "description":"Men's Crew" ,
+    "category": "Clothing",
+    "subCategory": "Hoodies & Pullovers",
+    "type":["Sweatshirts", "Graphic T-Shirt"] ,
+    "fit": "Standard",
+    "stock": {
+      "green": { "M": 9, "L": 7, "S": 10 },
+      "black": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 56.97,
+    "discount": 0.24,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "green": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4a0e3a52-eb0b-45fb-a31d-2975a2bf2947/M+NK+CLUB%2B+BB+CREW+PATCH+GX.png",
+      "black": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e9b79d8d-415e-41e1-b6b8-16db1c802050/M+NK+CLUB%2B+BB+CREW+PATCH+GX.png"
+    },
+    "gender": ["Male", "Unisex"]
+  },
+  {
+    "productId": "007",
+    "productName": "Nike Sportswear Therma-FIT Tech Pack",
+    "description":"Men's Winterized Top" ,
+    "category": "Clothing",
+    "subCategory": "Hoodies & Pullovers",
+    "type":["Hoodies"] ,
+    "fit": "Standard",
+    "stock": {
+      "yellow": { "M": 9, "L": 7, "S": 10 }
+    },
+    "price": 80.97,
+    "discount": 0.46,
+    "brand": "Nike Sportswear",
+    "collections":"Tech Pack",
+    "imageURLs": {
+      "yellow": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e8e8005a-081a-4dbf-b60a-98a3d66eccb9/M+NSW+TP+TF+WINTER+TOP+REPEL.png"
+    },
+    "gender": ["Male"]
+  },
+  {
+    "productId": "008",
+    "productName": "Jordan Brooklyn Fleece",
+    "description":"Men's Full-zip Hoodie" ,
+    "category": "Clothing",
+    "subCategory": "Hoodies & Pullovers",
+    "type":["Full Zip"] ,
+    "fit": "Standard",
+    "stock": {
+      "black": { "M": 9, "L": 7, "S": 10 },
+      "grey": {"M": 9, "L": 7, "S": 10}
+    },
+    "price": 75,
+    "discount": 0,
+    "brand": "Jordan",
+    "collections":"Brooklyn Fleece",
+    "imageURLs": {
+      "black": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/748a2358-a025-4545-900e-a135353f6d2f/M+J+BRK+FLC+FZ.png",
+      "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3f83e744-6817-41a9-bcc4-ca4408e3fdfd/M+J+BRK+FLC+FZ.png"
+    },
+    "gender": ["Male"]
+  }
+
+  
+
+  
+
+]
+ 
