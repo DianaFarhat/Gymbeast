@@ -39,32 +39,30 @@
           </svg>              
         </button>
       </div>       
-      
-      <div id="filters-sidebar" class="filters-sidebar hidden">
-        <!-- Filter options go here -->
-      </div>
     </div>  
       
+  
     <section id="product1" class="section-p1 container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-            <template id="product-template">
-                <div class="col">
-                  <div class="pro card h-100">
-                    <img src="" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="product-name card-title"></h5>
-                      <p class="product-description card-text"></p>
-                      <span class="product-brand text-muted"></span>
-                      <h4 class="product-price"></h4>
-                    </div>
-                  </div>
+        <div class="row g-4">
+           <!-- Product Item -->
+           <template id="product-template">
+            <div class="col-12 col-lg-4">
+              <div class="pro card h-100">
+                <img src="" class="card-img-top"   alt="Product Image"  class="card-img-top embed-responsive-item" >
+                <div class="card-body">
+                  <h5 class="product-name card-title"></h5>
+                  <p class="product-description card-text"></p>
+                  <span class="product-brand text-muted"></span>
+                  <h4 class="product-price"></h4>
                 </div>
-            </template>
-            
+              </div>
+            </div>
+           </template>
+             <!-- Product Item With Discount -->
             <template id="discounted-product-template">
-                <div class="col">
+                <div class="col-12 col-lg-4">
                   <div class="pro card h-100">
-                    <img src="" class="card-img-top">
+                    <img src="" class="card-img-top" alt="Product Image"  class="card-img-top embed-responsive-item" >
                     <div class="card-body">
                       <h5 class="product-name card-title"></h5>
                       <p class="product-description card-text"></p>
