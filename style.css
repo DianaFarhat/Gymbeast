@@ -279,16 +279,56 @@ body {
   width: 100%;
   height: auto;
 }
+
+
 .grid-overlay-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 20px; 
+  left: 20px; 
+  text-align: left;
+  line-height: 1.5;
   color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
+
+.grid-title {
+  margin: 0;
+  font-size: 1rem; 
+  font-weight: normal; 
+  line-height: 1.2;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.grid-product {
+  margin: 10px 0; 
+  font-size: 1.8rem; 
+  font-weight: bold;
+  line-height: 1.2;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.round-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #fff; 
+  color: #000; 
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.round-button:hover {
+  background-color: #d41935; /* Hover background */
+  color: #fff;
+}
+
 .grid-col {
   padding: 0;
   
