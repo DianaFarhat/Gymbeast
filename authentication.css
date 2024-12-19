@@ -1,0 +1,162 @@
+/* General Styling */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Account Section */
+.container {
+    width: 60vh; /* Wider container */
+    text-align: center;
+}
+
+.logo img {
+    width: 18vh; /* Larger logo */
+    margin-bottom: 3.5vh;
+}
+
+.form-container h1 {
+    font-size: 3.5vh; /* Bigger heading */
+    margin-bottom: 2.5vh;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 2vh; /* Larger label */
+    margin-bottom: 1vh;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 1.5vh; /* Larger padding */
+    margin-bottom: 1.5vh;
+    border: 0.3vh solid #d9534f;
+    border-radius: 0.7vh;
+    box-sizing: border-box;
+    font-size: 2vh; /* Bigger input text */
+}
+
+input:hover {
+    outline: none;
+    border-color: #d9534f;
+}
+
+button {
+    width: 100%;
+    padding: 1.5vh; /* Bigger button padding */
+    margin: 1.5vh 0;
+    border: none;
+    border-radius: 0.7vh;
+    font-size: 2vh; /* Bigger button text */
+    cursor: pointer;
+}
+
+.sign-in-button { 
+    background-color: #cc0a27;
+    color: #fff;
+    border: none;
+    border-radius: 0.7vh;
+    padding: 1.5vh;
+    font-size: 2vh;
+    margin-bottom: 1.5vh;
+}
+
+.sign-in-button:hover {
+    background-color: #b30721;
+}
+
+.signin-google {
+    background-color: #ffffff;
+    color: #000000;
+    border: 0.3vh solid black;
+    border-radius: 0.7vh;
+    padding: 1.5vh;
+    font-size: 2vh;
+    cursor: pointer;
+    margin-bottom: 1.5vh;
+}
+
+.signin-google:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.create-account-button {
+    background-color: white;
+    color: black;
+    border: 0.3vh solid black;
+}
+
+.create-account-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.terms {
+    font-size: 1.5vh; /* Larger terms text */
+    margin-top: 2.5vh;
+    color: #666;
+}
+
+.terms a {
+    color: #666;
+    text-decoration: underline;
+    display: inline;
+}
+
+/* Sign In Section */
+.signin-container {
+    background-color: #fff;
+    border: 0.3vh solid #ddd;
+    border-radius: 0.7vh;
+    padding: 3.5vh;
+    width: 50vh; /* Wider sign-in box */
+    text-align: center;
+    box-shadow: 0 0.7vh 1vh rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3.5vh; /* Bigger heading */
+    margin-bottom: 2vh;
+    color: #333;
+}
+
+p {
+    font-size: 1.5vh; /* Larger paragraph text */
+    color: #555;
+    margin-bottom: 2.5vh;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 1.5vh;
+    margin-bottom: 1.5vh;
+    border: 0.3vh solid #ccc;
+    border-radius: 0.7vh;
+    font-size: 2vh; /* Larger password input */
+}
+
+a {
+    display: block;
+    font-size: 1.5vh; /* Bigger links */
+    color: #e60023;
+    text-decoration: none;
+    margin-bottom: 2.5vh;
+}
+
+button.secondary-button {
+    background-color: white;
+    color: black;
+    border: 0.3vh solid black;
+    font-size: 2vh;
+    padding: 1.5vh;
+}
