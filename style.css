@@ -144,6 +144,7 @@ body {
   color: #d41935;
 }
 
+
 #navbar li a:hover::after,
 #navbar li a.active::after {
   content: '';
@@ -198,6 +199,41 @@ body {
   border-radius: 50%;
   color: #000;
   font-size: 20px;
+}
+
+/* Drop down menu styling */
+.dropdown-menu {
+  background-color: #f8f9fa; 
+  padding: 20px; 
+  border: none; 
+}
+
+.dropdown-item {
+  padding: 5px 0; 
+  color: #000; 
+}
+
+
+.dropdown-item:active,
+.dropdown-item:focus {
+    background-color: transparent; /* Removes default bootstrap background color */
+    text-decoration: none;         
+    color: inherit;             
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; 
+  color: #000;               
+}
+
+.dropdown-menu h6 {
+  margin-bottom: 10px; 
+  color: #343a40; 
+}
+
+.nav-link:focus {
+  outline: none;
+  color: #d41935; 
 }
 
 /* Responsive Styling */
