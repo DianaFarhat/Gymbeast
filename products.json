@@ -172,6 +172,28 @@
       "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3f83e744-6817-41a9-bcc4-ca4408e3fdfd/M+J+BRK+FLC+FZ.png"
     },
     "gender": ["Male"]
+  },
+  {
+    "productId": "009",
+    "productName": "",
+    "description":"" ,
+    "category": "",
+    "subCategory": "",
+    "type":["Full Zip"] ,
+    "fit": "Standard",
+    "stock": {
+      "black": { "M": 9, "L": 7, "S": 10 },
+      "grey": {"M": 9, "L": 7, "S": 10}
+    },
+    "price": 75,
+    "discount": 0,
+    "brand": "Jordan",
+    "collections":"Brooklyn Fleece",
+    "imageURLs": {
+      "black": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/748a2358-a025-4545-900e-a135353f6d2f/M+J+BRK+FLC+FZ.png",
+      "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3f83e744-6817-41a9-bcc4-ca4408e3fdfd/M+J+BRK+FLC+FZ.png"
+    },
+    "gender": ["Male"]
   }
 
   
