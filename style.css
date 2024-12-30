@@ -468,6 +468,36 @@ body {
 }
 
 /* =============================== */
+/*         Cart Page              */
+/* =============================== */
+
+.product-img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* =============================== */
+/*         Dynamic Sproducts      */
+/* =============================== */
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+}
+.color-swatch.active {
+  border-color: #007bff;
+}
+
+/* =============================== */
 /*          Shop Page             */
 /* =============================== */
 

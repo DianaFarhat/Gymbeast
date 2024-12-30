@@ -5,17 +5,60 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Cart | Gymbeast</title>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
-
+        <div class="container mt-5">
+            <h1 class="mb-4">Your Cart</h1>
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Cart Items -->
+                    <div class="card mb-4">
+                        <div class="card-body" id="cart-items">
+                            <!-- Cart items will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!-- Order Summary -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Order Summary</h5>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <span id="subtotal">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Estimated Shipping</span>
+                                <span id="shipping">$5.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <span>Estimated Tax</span>
+                                <span id="tax">$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <h5>Total</h5>
+                                <h5 id="total">$0.00</h5>
+                            </div>
+                            <button class="btn btn-dark w-100" onclick="checkout()">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="cart.js"></script>
         <script src="script.js"></script>
+        <script>
+            displayCart();
+        </script>
 
     </body>
 
