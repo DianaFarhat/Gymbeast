@@ -11,6 +11,40 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Password Container */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Input Field */
+.password-container input {
+    width: 100%;
+    padding: 1.5vh;
+    padding-right: 35px; /* Make room for the eye icon */
+    font-size: 2vh;
+    border-radius: 0.7vh;
+    box-sizing: border-box;
+}
+
+/* Eye Icon */
+.toggle-password {
+    position: absolute;
+    right: 1.2vh; /* Position the icon on the right side */
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 2vh; /* Adjust icon size */
+    color: #4e6257;
+}
+
+/* Hover effect for eye icon */
+.toggle-password:hover {
+    color: #000;
+}
+
+
+
 /* Account Section */
 .container {
     width: 60vh; /* Wider container */
@@ -18,8 +52,8 @@ body {
 }
 
 .logo img {
-    width: 18vh; /* Larger logo */
-    margin-bottom: 3.5vh;
+    width: 32vh; /* Larger logo */
+    margin-bottom: 2.5vh;
 }
 
 .form-container h1 {
@@ -39,7 +73,7 @@ input {
     width: 100%;
     padding: 1.5vh; /* Larger padding */
     margin-bottom: 1.5vh;
-    border: 0.3vh solid #d9534f;
+    border: 0.3vh solid #71917f;;
     border-radius: 0.7vh;
     box-sizing: border-box;
     font-size: 2vh; /* Bigger input text */
@@ -47,7 +81,7 @@ input {
 
 input:hover {
     outline: none;
-    border-color: #d9534f;
+    border-color: #4e6257;;
 }
 
 button {
@@ -61,7 +95,7 @@ button {
 }
 
 .sign-in-button { 
-    background-color: #cc0a27;
+    background-color: #a4c3b2;;
     color: #fff;
     border: none;
     border-radius: 0.7vh;
@@ -71,7 +105,7 @@ button {
 }
 
 .sign-in-button:hover {
-    background-color: #b30721;
+    background-color: #6a7e73;;
 }
 
 .signin-google {
@@ -148,7 +182,7 @@ input[type="password"] {
 a {
     display: block;
     font-size: 1.5vh; /* Bigger links */
-    color: #e60023;
+    color: #657e70;;
     text-decoration: none;
     margin-bottom: 2.5vh;
 }

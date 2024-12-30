@@ -1,15 +1,20 @@
-// Email Validation Function
 function isValidEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
 }
+function isValidLebaneseNumber(number) {
+    const regex = /^(03|70|71|76|78|79|01|04|05|06|07|09|81)\d{6}$/;
+    return regex.test(number);
+}
 
-// Function to handle Sign-Up
 function validateSignup() {
     const email = document.getElementById('signup-email').value.trim();
     const password = document.getElementById('signup-password').value.trim();
+    const name = document.getElementById('signup-name').value.trim();
+    const confirm = document.getElementById('signup-confirm').value.trim();
+    const number = document.getElementById('signup-number').value.trim();
 
-    if (email === '' || password === '') {
+    if (email === '' || password === '' || name === '' || confirm === '' || number === '') {
         alert('Please fill in all fields.');
         return;
     }
@@ -21,14 +26,18 @@ function validateSignup() {
         alert('Password must be at least 8 characters long.');
         return;
     }
+    if (confirm !== password) {
+        alert('Passwords do not match.');
+        return;
+    }
+    if (!isValidLebaneseNumber(number)) {
+        alert('Please enter a valid Lebanese phone number.');
+        return;
+    }
 
-    // Prepare data
-    const userData = { email, password };
+    const userData = { email, password, name, number };
 
-    // Check if users already exist in localStorage
     const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-
-    // Check if email already exists
     const userExists = existingUsers.some(user => user.email === email);
     if (userExists) {
         alert('Email already registered. Please sign in.');
@@ -36,27 +45,54 @@ function validateSignup() {
         return;
     }
 
-    // Save new user to localStorage
     existingUsers.push(userData);
     localStorage.setItem('users', JSON.stringify(existingUsers));
+    localStorage.setItem('isLoggedIn', 'true');
+    localStorage.setItem('loggedInEmail', email);
 
     alert('Account successfully created!');
-    window.location.href = 'C:\Users\Hussein\Desktop\Gymbeast\index.html'; // Redirect to C:\Users\Hussein\Desktop\Gymbeast\index.html
+    window.location.href = '../index.html';
 }
 
-// Event listener for "SIGN IN" button (in Account Section)
+
+function handleSignin() {
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (email === '' || password === '') {
+        alert('Please enter both email and password.');
+        return;
+    }
+    if (password.length < 8) {
+        alert('Password must be at least 8 characters long.');
+        return;
+    }
+
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const user = users.find(user => user.email === email && user.password === password);
+
+    if (user) {
+        alert('Sign-In Successful!');
+        localStorage.setItem('isLoggedIn', 'true');
+        localStorage.setItem('loggedInEmail', email);
+
+        window.location.href = '../index.html';
+    } else {
+        alert('Invalid email or password. Please try again.');
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (isLoggedIn === 'true') {
+        window.location.href = '../index.html';
+        return;
+    }
+
     const toSigninButton = document.getElementById('to-signin');
     const finalSigninButton = document.getElementById('final-signin');
     const backToAccountButton = document.getElementById('back-to-account');
 
-    // Check if user is already logged in
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    if (isLoggedIn === 'true') {
-         window.location.href = 'C:\Users\Hussein\Desktop\Gymbeast\index.html'; // Redirect directly to C:\Users\Hussein\Desktop\Gymbeast\index.html if logged in
-    }
-
-    // Sign-In Button: Display the Sign-In Section
     if (toSigninButton) {
         toSigninButton.addEventListener('click', function (e) {
             e.preventDefault();
@@ -67,22 +103,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Please enter your email address.');
                 return;
             }
-
             if (!isValidEmail(email)) {
                 alert('Please enter a valid email address.');
                 return;
             }
 
-            // Show Sign-In Section
             document.getElementById('account-section').style.display = 'none';
             document.getElementById('signin-section').style.display = 'block';
 
-            // Set the email in the Sign-In section
             document.getElementById('user-email-display').innerText = email;
         });
     }
 
-    // "Not You?" link: Go back to Account Section
     if (backToAccountButton) {
         backToAccountButton.addEventListener('click', function (e) {
             e.preventDefault();
@@ -91,38 +123,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Final Sign-In Button: Check credentials and sign in
     if (finalSigninButton) {
         finalSigninButton.addEventListener('click', function (e) {
             e.preventDefault();
-            const email = document.getElementById('email').value.trim();
-            const password = document.getElementById('password').value.trim();
-
-            if (email === '' || password === '') {
-                alert('Please enter both email and password.');
-                return;
-            }
-
-            if (password.length < 8) {
-                alert('Password must be at least 8 characters long.');
-                return;
-            }
-
-            // Retrieve users from localStorage
-            const users = JSON.parse(localStorage.getItem('users')) || [];
-
-            // Check credentials
-            const user = users.find(user => user.email === email && user.password === password);
-
-            if (user) {
-                alert('Sign-In Successful!');
-                // Store login state in localStorage
-                localStorage.setItem('isLoggedIn', 'true');
-                localStorage.setItem('loggedInEmail', email); // Store logged-in email
-                window.location.href = 'C:\Users\Hussein\Desktop\Gymbeast\index.html'; // Redirect to C:\Users\Hussein\Desktop\Gymbeast\index.html
-            } else {
-                alert('Invalid email or password. Please try again.');
-            }
+            handleSignin();
         });
     }
 });
+
+
+function togglePassword(inputId, toggleIcon) {
+    const input = document.getElementById(inputId);
+    const icon = toggleIcon.querySelector('i');
+
+    if (input.type === "password") {
+        input.type = "text";
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+    } else {
+        input.type = "password";
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+    }
+}
