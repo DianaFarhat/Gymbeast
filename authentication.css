@@ -73,7 +73,7 @@ input {
     width: 100%;
     padding: 1.5vh; /* Larger padding */
     margin-bottom: 1.5vh;
-    border: 0.3vh solid #71917f;;
+    border: 0.3vh solid #d41935;;
     border-radius: 0.7vh;
     box-sizing: border-box;
     font-size: 2vh; /* Bigger input text */
@@ -81,7 +81,7 @@ input {
 
 input:hover {
     outline: none;
-    border-color: #4e6257;;
+    border-color: #ad172d;
 }
 
 button {
@@ -95,7 +95,7 @@ button {
 }
 
 .sign-in-button { 
-    background-color: #a4c3b2;;
+    background-color: #d41935;
     color: #fff;
     border: none;
     border-radius: 0.7vh;
@@ -105,7 +105,7 @@ button {
 }
 
 .sign-in-button:hover {
-    background-color: #6a7e73;;
+    background-color: #ad172d;
 }
 
 .signin-google {
@@ -182,7 +182,7 @@ input[type="password"] {
 a {
     display: block;
     font-size: 1.5vh; /* Bigger links */
-    color: #657e70;;
+    color: #ad172d;
     text-decoration: none;
     margin-bottom: 2.5vh;
 }

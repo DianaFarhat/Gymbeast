@@ -1,3 +1,5 @@
+
+
 // Function to fetch products from JSON file
 async function fetchProducts() {
     try {
@@ -111,7 +113,68 @@ async function displayCart() {
 
 // Function to handle checkout (placeholder)
 function checkout() {
-    alert('Checkout functionality not implemented in this demo.');
+    const loggedInEmail = localStorage.getItem('loggedInEmail');
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    if (!loggedInEmail) {
+        alert("Please log in or create an account to proceed to checkout. Your cart will be saved.");
+        window.location.href = '../signin.html';
+        return;
+    }
+
+    if (cart.length > 0) {
+        fetchProducts().then(products => {
+            const userCart = cart.map(item => {
+                const product = products.find(p => p.productId === item.id);
+                if (product) {
+                    const price = product.price * (1 - product.discount);
+                    return {
+                        name: product.productName,
+                        quantity: item.quantity,
+                        price: product.price,
+                        discountedPrice: price,
+                        description: product.description,
+                        image: product.imageURLs[item.color],
+                        id: item.id,
+                        color: item.color,
+                        size: item.size
+                    };
+                }
+                return null;
+            }).filter(item => item !== null);
+
+            const totalPriceBeforeDiscount = userCart.reduce(
+                (acc, item) => acc + item.price * item.quantity, 0
+            );
+            const totalDiscountAmount = userCart.reduce(
+                (acc, item) => acc + ((item.price - item.discountedPrice) * item.quantity), 0
+            );
+            const totalPriceAfterDiscount = userCart.reduce(
+                (acc, item) => acc + item.discountedPrice * item.quantity, 0
+            );
+            const deliveryTaxes = totalPriceAfterDiscount * 0.10;
+            const totalPriceIncludingTaxes = totalPriceAfterDiscount + deliveryTaxes;
+
+            const orderSummary = {
+                items: userCart,
+                totalItems: userCart.reduce((acc, item) => acc + item.quantity, 0),
+                totalPriceBeforeDiscount,
+                totalDiscountAmount,
+                totalPriceAfterDiscount,
+                deliveryTaxes,
+                totalPriceIncludingTaxes
+            };
+
+            localStorage.setItem('orderSummary', JSON.stringify(orderSummary));
+            alert("Proceeding to checkout...");
+            window.location.href = "../checkout.html";
+        }).catch(error => {
+            console.error("Error fetching products:", error);
+            alert("An error occurred while processing your checkout. Please try again later.");
+        });
+    } else {
+        alert("Your cart is empty. Please add a product to your cart.");
+    }
 }
 
 // Function to display products on the products page
