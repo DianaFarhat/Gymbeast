@@ -19,7 +19,9 @@
       "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-0efe3eb2-788a-4ba4-9b55-2513ec5ceb4a/M+NSW+CLUB+TEE.png",
       "blue": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/pkhhzbog65ezgmmh85wv/M+NSW+CLUB+TEE.png"
     },
-    "gender":  ["Male"]
+    "gender":  ["Male"],
+    "date_added": "2024-12-31",
+  "last_updated": "2024-12-31"
   },
   {
     "productId": "002",
@@ -30,7 +32,7 @@
     "type":["Long Sleeve Shirts"] ,
     "fit": "Standard",
     "stock": {
-      "grey": { "M": 10, "L": 10, "S": 10 },
+      "white": { "M": 10, "L": 10, "S": 10 },
       "blue": { "M": 10, "L": 3, "S": 4 }
     },
     "price": 50,
@@ -41,7 +43,9 @@
       "white": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c93f59da-499f-46ef-8d4a-7442e475e365/M+NK+CLUB+CREW+SWEATER.png",
       "blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/937c85a6-3298-4948-882e-d243fdd95d22/M+NK+CLUB+CREW+SWEATER.png"
     },
-    "gender":  ["Male"]
+    "gender":  ["Male"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
   },
   {
     "productId": "003",
@@ -63,32 +67,12 @@
       "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4488b4cc-1245-48c5-b3c3-9a7d004cdaab/M+NP+DF+SLIM+TOP+SL.png",
       "red": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9426c1a1-a4e5-480d-aedd-6ca6e2f088c2/M+NP+DF+SLIM+TOP+SL.png"
     },
-    "gender":  ["Male"]
+    "gender":  ["Male"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
   },
   {
     "productId": "004",
-    "productName": "Nike Pro",
-    "description":"Men's Dri-FIT Slim Sleeveless Top" ,
-    "category": "Clothing",
-    "subCategory": "Tops & T-shirts",
-    "type":["Sleeveless & Tank Tops"] ,
-    "fit": "Tight",
-    "stock": {
-      "grey": { "M": 9, "L": 7, "S": 10 },
-      "red": { "M": 10, "L": 13, "S": 4 }
-    },
-    "price": 50,
-    "discount": 0.2,
-    "brand": "Nike Pro",
-    "collections":"Nike Pro",
-    "imageURLs": {
-      "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4488b4cc-1245-48c5-b3c3-9a7d004cdaab/M+NP+DF+SLIM+TOP+SL.png",
-      "red": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9426c1a1-a4e5-480d-aedd-6ca6e2f088c2/M+NP+DF+SLIM+TOP+SL.png"
-    },
-    "gender":  ["Male"]
-  },
-  {
-    "productId": "005",
     "productName": "Jordan Dri-FIT Sport",
     "description":"Men's Golf Polo" ,
     "category": "Clothing",
@@ -107,10 +91,12 @@
       "black": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9f6c7229-1461-4c38-9bb7-19eca7f7f0f7/M+J+DF+SPRT+GLF+POLO.png",
       "white": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/5e1617ae-22c3-40b5-9ae4-909ac04b67c0/M+J+DF+SPRT+GLF+POLO.png"
     },
-    "gender": ["Male", "Unisex"]
+    "gender": ["Male", "Female", "Unisex"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
   },
   {
-    "productId": "006",
+    "productId": "005",
     "productName": "Nike Club Fleece",
     "description":"Men's Crew" ,
     "category": "Clothing",
@@ -129,10 +115,12 @@
       "green": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4a0e3a52-eb0b-45fb-a31d-2975a2bf2947/M+NK+CLUB%2B+BB+CREW+PATCH+GX.png",
       "black": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e9b79d8d-415e-41e1-b6b8-16db1c802050/M+NK+CLUB%2B+BB+CREW+PATCH+GX.png"
     },
-    "gender": ["Male", "Unisex"]
+    "gender": ["Male", "Unisex"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
   },
   {
-    "productId": "007",
+    "productId": "006",
     "productName": "Nike Sportswear Therma-FIT Tech Pack",
     "description":"Men's Winterized Top" ,
     "category": "Clothing",
@@ -149,10 +137,12 @@
     "imageURLs": {
       "yellow": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e8e8005a-081a-4dbf-b60a-98a3d66eccb9/M+NSW+TP+TF+WINTER+TOP+REPEL.png"
     },
-    "gender": ["Male"]
+    "gender": ["Male"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
   },
   {
-    "productId": "008",
+    "productId": "007",
     "productName": "Jordan Brooklyn Fleece",
     "description":"Men's Full-zip Hoodie" ,
     "category": "Clothing",
@@ -171,30 +161,567 @@
       "black": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/748a2358-a025-4545-900e-a135353f6d2f/M+J+BRK+FLC+FZ.png",
       "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3f83e744-6817-41a9-bcc4-ca4408e3fdfd/M+J+BRK+FLC+FZ.png"
     },
-    "gender": ["Male"]
+    "gender": ["Male"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
   },
   {
-    "productId": "009",
-    "productName": "",
-    "description":"" ,
-    "category": "",
-    "subCategory": "",
-    "type":["Full Zip"] ,
+    "productId": "008",
+    "productName": "Jordan Brooklyn Fleece",
+    "description":"Men's 7 Performance Shorts" ,
+    "category": "Clothing",
+    "subCategory": "Shorts",
+    "type":["Knee Length"] ,
     "fit": "Standard",
     "stock": {
       "black": { "M": 9, "L": 7, "S": 10 },
-      "grey": {"M": 9, "L": 7, "S": 10}
+      "navy blue": {"M": 9, "L": 7, "S": 10}
     },
-    "price": 75,
+    "price": 50,
     "discount": 0,
     "brand": "Jordan",
     "collections":"Brooklyn Fleece",
     "imageURLs": {
-      "black": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/748a2358-a025-4545-900e-a135353f6d2f/M+J+BRK+FLC+FZ.png",
-      "grey": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3f83e744-6817-41a9-bcc4-ca4408e3fdfd/M+J+BRK+FLC+FZ.png"
+      "black": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f4b4d078-9fa5-4e54-8be8-48dc95e2d19e/M+J+BRK+FLC+SHORT.png",
+      "navy blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/768fdeb3-ff4a-423a-b646-ad576fe6404d/M+J+BRK+FLC+SHORT.png"
     },
-    "gender": ["Male"]
+    "gender": ["Male"],
+    "date_added": "2023-09-13",
+    "last_updated": "2023-11-21"
+  },
+  {
+    "productId": "009",
+    "productName": "Jordan Sport",
+    "description":"Men's Dri-FIT Shorts" ,
+    "category": "Clothing",
+    "subCategory": "Shorts",
+    "type":["1/2 Length"] ,
+    "fit": "Tight",
+    "stock": {
+      "black": { "M": 9, "L": 7, "S": 10 },
+      "white": {"M": 9, "L": 7, "S": 10}
+    },
+    "price": 50,
+    "discount": 0,
+    "brand": "Jordan",
+    "collections":"n/a",
+    "imageURLs": {
+      "black": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d8488936-1df4-4f7d-97a3-a34a699478fb/M+J+DF+SPRT+COMP+SHORT.png",
+      "white": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8cceead0-3b1c-4a4e-8ed9-cc0b75798063/M+J+DF+SPRT+COMP+SHORT.png"
+    },
+    "gender": ["Male"],
+    "date_added": "2023-07-23",
+    "last_updated": "2023-12-21"
+  },
+  {
+    "productId": "010",
+    "productName": "Jordan Sport",
+    "description":"Men's Dri-FIT Shorts" ,
+    "category": "Clothing",
+    "subCategory": "Shorts",
+    "type":["Mid-Thigh Length"] ,
+    "fit": "Standard",
+    "stock": {
+      "blue": { "M": 9, "L": 7, "S": 10 },
+      "purple": {"M": 9, "L": 7, "S": 10}
+    },
+    "price": 60,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0b6b12ff-d8b7-4181-a1ca-12cb2d172217/M+NK+CLUB+FLOW+SHORT+SWEET.png",
+      "purple": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c70913ce-9421-4ea9-b118-5b4ec8a8889c/M+NK+CLUB+FLOW+SHORT+SWEET.png"
+    },
+    "gender": ["Male"],
+    "date_added": "2025-01-01",
+    "last_upd,ated": "2025-01-01"
+  },
+  {
+    "productId": "011",
+    "productName": "Nike Solo Swoosh",
+    "description":"Men's Fleece Pants" ,
+    "category": "Clothing",
+    "subCategory": "Pants",
+    "type":["Joggers & Sweatpants"] ,
+    "fit": "Standard",
+    "stock": {
+      "blue": { "M": 9, "L": 7, "S": 10 },
+      "pink": {"M": 9, "L": 7, "S": 10}
+    },
+    "price": 100,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Solo Swoosh",
+    "imageURLs": {
+      "blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/49a6ff44-dc34-40a9-bd94-57b643638344/M+NK+SOLO+SWSH+FLC+CF+PANT.png",
+      "pink": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5e3fe9f5-feed-4fb1-8043-da1ab4676682/M+NK+SOLO+SWSH+FLC+CF+PANT.png"
+    },
+    "gender": ["Male"],
+    "date_added": "2025-01-01",
+    "last_updated": "2025-01-01"
+  },
+  {
+    "productId": "012",
+    "productName": "Nike Life",
+    "description":"Men's Carpenter Pants" ,
+    "category": "Clothing",
+    "subCategory": "Pants",
+    "type":["Pants"] ,
+    "fit": "Standard",
+    "stock": {
+      "black": { "M": 9, "L": 7, "S": 10 },
+      "beige": {"M": 9, "L": 7, "S": 10}
+    },
+    "price": 120,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"n/a",
+    "imageURLs": {
+      "black": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0b3ecc9a-4357-4439-ad01-9d4349d5c0e3/M+NL+CARPENTER+PANT.png",
+      "beige": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8d301a4e-c641-4195-98c6-6d20b7cd2f0b/M+NL+CARPENTER+PANT.png"
+    },
+    "gender": ["Male"],
+    "date_added": "2025-01-01",
+    "last_updated": "2025-01-01"
+  },
+  {
+    "productId": "012",
+    "productName": "Nike Sportswear Chill Knit",
+    "description":"Women's Slim Cropped T-Shirt" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type":["Graphic T-Shirt", "Short Sleeve Shirts"] ,
+    "fit": "Standard",
+    "stock": {
+      "white": { "M": 9, "L": 7, "S": 10 }
+    },
+    "price": 35,
+    "discount": 0.15,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "white": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/22c2944a-5782-4982-93e8-ca0f8027b908/W+NSW+NK+CHLL+KNT+MD+CRP+FRUIT.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2025-01-01",
+    "last_updated": "2025-01-01"
+  },
+  {
+    "productId": "013",
+    "productName": "Nike ACG Delta River",
+    "description":"Women's Dri-FIT ADV Long-Sleeve Top" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type":["Long Sleeve Shirts"] ,
+    "fit": "Standard",
+    "stock": {
+      "red": { "M": 10, "L": 10, "S": 10 },
+      "pink": { "M": 10, "L": 3, "S": 4 }
+    },
+    "price": 72.97,
+    "discount": 0.2,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "red": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f398bf48-f767-4e86-a767-84d995751be4/W+ACG+DFADV+DLTA+RVER+BSLYR+LS.png",
+      "pink": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/563c416c-afc9-4d31-9031-cc2821e9d13a/W+ACG+DFADV+DLTA+RVER+BSLYR+LS.png"
+    },
+    "gender":  ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "014",
+    "productName": "Nike Pro Essential",
+    "description":"Women's T-Shirt" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type":["Sleeveless & Tank Tops"] ,
+    "fit": "Standard",
+    "stock": {
+      "pink": { "M": 9, "L": 7, "S": 10 },
+      "red": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 30,
+    "discount": 0.2,
+    "brand": "Nike Pro",
+    "collections":"Nike Pro",
+    "imageURLs": {
+      "pink": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6682a1b7-3eb7-4ba7-b5ee-6b91373de571/W+NSW+TEE+ESSNTL+LBR.png",
+      "red": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2915d10b-6633-4791-ba96-988a9f301d1c/W+NSW+TEE+ESSNTL+LBR.png"
+    },
+    "gender":  ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "015",
+    "productName": "Nike Pro One Fitted",
+    "description":"Women's Dri-FIT Cropped Tank Top" ,
+    "category": "Clothing",
+    "subCategory": "Tops & T-shirts",
+    "type":["Sleeveless & Tank Tops"] ,
+    "fit": "Tight",
+    "stock": {
+      "orange": { "M": 9, "L": 7, "S": 10 },
+      "pink": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 33.97,
+    "discount": 0,
+    "brand": "Nike Pro",
+    "collections":"Nike Pro",
+    "imageURLs": {
+      "orange": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6175ea69-f8a9-4dae-8fa1-a01b8b45d22f/W+NK+ONE+FITTED+DF+CROP+TANK.png",
+      "pink": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2b2d73c5-d5e4-4c3e-a641-ddc407f843ff/W+NK+ONE+FITTED+DF+CROP+TANK.png"
+    },
+    "gender":  ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "016",
+    "productName": "Nike Sportswear Classic",
+    "description":"Women's High-Waisted 8' Biker Shorts" ,
+    "category": "Clothing",
+    "subCategory": "Shorts",
+    "type":["Biker Shorts"] ,
+    "fit": "Tight",
+    "stock": {
+      "brown": { "M": 9, "L": 7, "S": 10 },
+      "blue": {"M": 9, "L": 7, "S": 10}
+    },
+    "price": 24.97,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "brown": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e0fa65ee-eb8d-4d98-8c51-5059e7d2033a/W+NSW+NK+CLSC+HR+8IN+SHORT.png",
+      "blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3147625e-c695-49fb-a3fe-c4341df4e489/W+NSW+NK+CLSC+HR+8IN+SHORT.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2023-09-13",
+    "last_updated": "2023-11-21"
+  },
+  {
+    "productId": "017",
+    "productName": "Nike Pro Sculpt",
+    "description":"Women's High-Waisted 3' Mid-Thigh Shorts" ,
+    "category": "Clothing",
+    "subCategory": "Shorts",
+    "type":["Mid-Thigh Length"] ,
+    "fit": "Standard",
+    "stock": {
+      "red": { "M": 9, "L": 7, "S": 10 },
+      "white": {"M": 9, "L": 7, "S": 10}
+    },
+    "price": 24.97,
+    "discount": 0,
+    "brand": "Nike Pro",
+    "collections":"Nike Pro",
+    "imageURLs": {
+      "red": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/84f845af-6335-42fd-8383-589a64f725f9/W+NK+ARSWFT+DFADV+MR+3IN+SHORT.png",
+      "white": "https://static.nike.com/a/images/t_PDP_144_v1/f_auto,q_auto:eco/3538176d-1c21-4f5a-aa05-afe2ed79014d/W+NK+ARSWFT+DFADV+MR+3IN+SHORT.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2023-09-13",
+    "last_updated": "2023-11-21"
+  }, 
+  {
+    "productId": "018",
+    "productName": "Nike Sportswear Club Fleece",
+    "description":"Women's Crew-Neck Sweatshirt" ,
+    "category": "Clothing",
+    "subCategory": "Hoodies & Pullovers",
+    "type":["Sweatshirts"] ,
+    "fit": "Standard",
+    "stock": {
+      "navy blue": { "M": 9, "L": 7, "S": 10 },
+      "white": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 51.97,
+    "discount": 0.24,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "navy blue": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/387b294b-552a-48c8-99cb-ac533bc0bf73/W+NSW+CLUB+CREW+CV.png",
+      "white": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b46280b7-8a5e-40a4-97d2-29af851bc609/W+NSW+CLUB+CREW+CV.png"
+    },
+    "gender": ["Male", "Unisex"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "019",
+    "productName": "Nike Therma-FIT One",
+    "description":"Women's Pullover Hoodie" ,
+    "category": "Clothing",
+    "subCategory": "Hoodies & Pullovers",
+    "type":["Hoodies"] ,
+    "fit": "Standard",
+    "stock": {
+      "purple": { "M": 9, "L": 7, "S": 10 },
+      "green": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 51.97,
+    "discount": 0.24,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "purple": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/885dfca5-8e99-4baa-b201-dec567419ad4/W+NK+ONE+TF+PO+HOODIE+LBR.png",
+      "green": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/760a13d6-d550-49a0-b25b-4cb078593fe2/W+NK+ONE+TF+PO+HOODIE+LBR.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "020",
+    "productName": "Nike Dri-FIT One",
+    "description":"Women's Full Zip French Terry Hoodie" ,
+    "category": "Clothing",
+    "subCategory": "Hoodies & Pullovers",
+    "type":["Hoodies"] ,
+    "fit": "Standard",
+    "stock": {
+      "brown": { "M": 9, "L": 7, "S": 10 },
+      "pink": { "M": 10, "L": 13, "S": 4 }
+    },
+    "price": 83.65,
+    "discount": 0.24,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "brown": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/da1aaeb3-534e-4bca-9897-e59afa14c2c7/W+NK+ONE+DF+FZ+HOODIE+LBR.png",
+      "pink": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/766e0b52-a1ab-4135-bb6c-c3ca4a841143/W+NK+ONE+DF+FZ+HOODIE+LBR.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "021",
+    "productName": "Nike Sportswear Phoenix Fleece",
+    "description":"Women's High-Waisted Oversized Pants" ,
+    "category": "Clothing",
+    "subCategory": "Pants",
+    "type":["Joggers & Sweatpants"] ,
+    "fit": "Standard",
+    "stock": {
+      "blue": { "M": 7, "L": 5, "S": 13 },
+      "pink": { "M": 10, "L": 13, "S": 6 }
+    },
+    "price": 89.65,
+    "discount": 0.24,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/222f7730-e99d-42a6-a2df-0811bcda1392/W+NSW+PHNX+FLC+HR+OS+PANT+2.png",
+      "pink": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/03757d1e-094c-4e9a-90a8-1c6240a79d5b/W+NSW+PHNX+FLC+HR+OS+PANT+2.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "022",
+    "productName": "Nike Zenvy",
+    "description":"Women's Gentle-Support High-Waisted Pants" ,
+    "category": "Clothing",
+    "subCategory": "Pants",
+    "type":["Tights & Leggings"] ,
+    "fit": "Tight",
+    "stock": {
+      "brown": { "M": 7, "L": 5, "S": 13 },
+      "beige": { "M": 10, "L": 13, "S": 6 }
+    },
+    "price": 100,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Club",
+    "imageURLs": {
+      "brown": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f0965858-c180-4f6b-a68a-fc942f4dfec4/W+NK+DF+ZENVY+HR+7%2F8+TGHT.png",
+      "beige": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1ad3900a-5c4c-48b3-a85b-8a5df48f29d3/W+NK+DF+ZENVY+HR+7%2F8+TGHT.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "023",
+    "productName": "Jordan Pants",
+    "description":"Women's Woven Pants" ,
+    "category": "Clothing",
+    "subCategory": "Pants",
+    "type":["Pants"] ,
+    "fit": "Standard",
+    "stock": {
+      "brown": { "M": 7, "L": 5, "S": 13 },
+      "beige": { "M": 10, "L": 13, "S": 6 }
+    },
+    "price": 110,
+    "discount": 0,
+    "brand": "Jordan",
+    "collections":"",
+    "imageURLs": {
+      "brown": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/68410c61-5a8d-416f-b033-883771be1791/W+J+WVN+PANT.png",
+      "beige": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/37e3beae-786d-499d-9298-59beae68c3c4/W+J+WVN+PANT.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "024",
+    "productName": "Nike Swoosh High Support",
+    "description":"Women's Non-Padded Adjustable Sports Bra" ,
+    "category": "Clothing",
+    "subCategory": "Bras",
+    "type":["High-Support"] ,
+    "fit": "Standard",
+    "stock": {
+      "pink": { "M": 7, "L": 5, "S": 13 },
+      "black": { "M": 10, "L": 13, "S": 6 }
+    },
+    "price": 110,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Solo Swoosh",
+    "imageURLs": {
+      "pink": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9de18891-1456-4565-8c40-620b9126fd6d/W+NK+DF+SWSH+HGH+SPT+BRA.png",
+      "black": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f87f4439-c7de-4f6f-907f-ef5879b9ef16/W+NK+DF+SWSH+HGH+SPT+BRA.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "025",
+    "productName": "Nike Indy Light Support",
+    "description":"Women's Padded Adjustable Sports Bra" ,
+    "category": "Clothing",
+    "subCategory": "Bras",
+    "type":["Low-Support"] ,
+    "fit": "Standard",
+    "stock": {
+      "blue": { "M": 7, "L": 5, "S": 13 },
+      "black": { "M": 10, "L": 13, "S": 6 }
+    },
+    "price": 38,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Solo Swoosh",
+    "imageURLs": {
+      "blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fcc21d28-1351-4603-b2e9-17637970ba81/W+NK+DF+INDY+LGT+SPT+BRA.png",
+      "green": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/66d8cb53-1103-4d72-a20b-920b72b94cf2/W+NK+DF+INDY+LGT+SPT+BRA.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "026",
+    "productName": "Nike Revolution 5",
+    "description":"Road Running Shoes" ,
+    "category": "Shoes",
+    "subCategory": "All Shoes",
+    "type":["Running"] ,
+    "shoe height": "Low Top",
+    "stock": {
+      "black": { "36": 7, "37": 5, "38": 13, "39": 3, "40": 6, "41": 5, "42":8 }
+    },
+    "price": 54.99,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Dunk",
+    "imageURLs": {
+      "black": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/z12golttmgjbp3zhxvvq/WMNS+NIKE+REVOLUTION+5.png",
+      "red": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bdcf3baa-788b-49bf-89ab-6a1369f89853/W+NIKE+DUNK+LOW+NEXT+NATURE.pngg"
+    },
+    "gender": ["Female", "Male", "Unisex"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "027",
+    "productName": "Nike Versair",
+    "description":"Women's Workout Shoes" ,
+    "category": "Shoes",
+    "subCategory": "All Shoes",
+    "type":["Training & Gym"] ,
+    "shoe height": "Mid Top",
+    "stock": {
+      "black": { "36": 7, "37": 5, "38": 13, "39": 3, "40": 6, "41": 5, "42":8 },
+      "red": { "36": 7, "37": 5, "38": 13, "39": 3, "40": 6, "41": 5, "42":8 }
+    },
+    "price": 85.97,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Dunk",
+    "imageURLs": {
+      "black": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81530dd5-6cda-4f08-b0e8-e791a8dda52d/W+NIKE+VERSAIR.png",
+      "red": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6140eab5-2b5c-4e0e-8de9-2573e81f31f2/W+NIKE+VERSAIR.png"
+    },
+    "gender": ["Female"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "028",
+    "productName": "Nike Free Metcon 6",
+    "description":"Men's Workout Shoes" ,
+    "category": "Shoes",
+    "subCategory": "All Shoes",
+    "type":["Training & Gym"] ,
+    "shoe height": "Mid Top",
+    "stock": {
+      "white": { "36": 7, "37": 5, "38": 13, "39": 3, "40": 6, "41": 5, "42":8 },
+      "green": { "36": 7, "37": 5, "38": 13, "39": 3, "40": 6, "41": 5, "42":8 }
+    },
+    "price": 85.97,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Dunk",
+    "imageURLs": {
+      "white": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8b3da434-12a5-4a11-a5dc-d754892d2c10/NIKE+FREE+METCON+6.png",
+      "green": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d55c897c-3ddc-463c-a843-ba506e863c50/NIKE+FREE+METCON+6.png"
+    },
+    "gender": ["Male"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
+  },
+  {
+    "productId": "029",
+    "productName": "Nike Invincible 3",
+    "description":"Men's Road Running Shoes" ,
+    "category": "Shoes",
+    "subCategory": "All Shoes",
+    "type":["Running"] ,
+    "shoe height": "Mid Top",
+    "stock": {
+      "black": { "36": 7, "37": 5, "38": 13, "39": 3, "40": 6, "41": 5, "42":8 },
+      "blue": { "36": 7, "37": 5, "38": 13, "39": 3, "40": 6, "41": 5, "42":8 }
+    },
+    "price": 135.97,
+    "discount": 0,
+    "brand": "Nike Sportswear",
+    "collections":"Nike Dunk",
+    "imageURLs": {
+          "black": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4c41bcec-f8e9-4eaf-913d-e5fef6438749/NIKE+ZOOMX+INVINCIBLE+RUN+FK+3.png",
+        "blue": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2a42cefa-f2f3-4692-8796-a7803496ae9f/NIKE+ZOOMX+INVINCIBLE+RUN+FK+3.png"
+    },
+    "gender": ["Male"],
+    "date_added": "2024-12-31",
+    "last_updated": "2024-12-31"
   }
+  
+  
+  
+  
+  
+  
+
+
 
   
 
