@@ -1,5 +1,5 @@
 
-
+/*
 // Function to fetch products from JSON file
 async function fetchProducts() {
     try {
@@ -229,3 +229,4 @@ if (document.getElementById('product-list')) {
 if (document.getElementById('cart-items')) {
     displayCart();
 }
+    */

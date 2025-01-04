@@ -1,5 +1,5 @@
 // products.js
-
+/*
 async function fetchProducts() {
     try {
       const response = await fetch('products.json');
@@ -45,4 +45,4 @@ async function fetchProducts() {
   }
   
   document.addEventListener('DOMContentLoaded', displayProducts);
-  
+  */
