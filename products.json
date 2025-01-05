@@ -1,4 +1,5 @@
-[
+{
+"products": [
   {
     "productId": "001",
     "productName": "Nike Sportswear Club",
@@ -195,10 +196,22 @@
     },
     "gender": ["Male"]
   }
+],
 
-  
+  "bundles": [
+    {
+      "id": "bundle1",
+      "name": "Runner's Essentials Pack",
+      "productIds": ["001", "002"],
+      "discount": 0.15
+    },
+    {
+      "id": "bundle2",
+      "name": "Complete Training Set",
+      "productIds": ["001", "002", "003"],
+      "discount": 0.20
+    }
+  ]
 
-  
-
-]
+}
  

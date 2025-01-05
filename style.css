@@ -561,6 +561,35 @@ body {
   }
 }
 
+/* =============================== */
+/*          Dynamic sproduct       */
+/* =============================== */
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+}
+.color-swatch.active {
+  border-color: #007bff;
+}
+.star-rating {
+  color: #ffc107;
+}
+.review {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
 
 /* =============================== */
 /*        Single Product Page      */
