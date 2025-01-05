@@ -210,4 +210,3 @@ if (document.getElementById('product-list')) {
 if (document.getElementById('cart-items')) {
     displayCart();
 }
-
