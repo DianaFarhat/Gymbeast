@@ -1,3 +1,4 @@
+/*
 let products = [];
 
 // Function to fetch and load products from the JSON file at app startup
@@ -70,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 
-/*
+
 // Function to handle product click
 function handleProductClick(productId) {
     console.log('Product clicked with ID:', productId);
