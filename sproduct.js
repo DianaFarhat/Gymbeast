@@ -1,8 +1,8 @@
-async function displayProductDetails() {
-    // Get the product ID from localStorage
+async function displayProductDetails() {    
+
+    // Get productId from localStorage
     const productId = localStorage.getItem('currentProductId');
 
-    
     if (!productId) {
         document.getElementById('product-details').innerHTML = '<h1>Product not found</h1>';
         return;
@@ -141,5 +141,7 @@ document.getElementById('review-form').addEventListener('submit', function(e) {
     e.target.reset();
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    displayProductDetails();
+});
 
-document.addEventListener('DOMContentLoaded', displayProductDetails);

@@ -17,6 +17,7 @@ function getTemplate(product) {
   return template.content.cloneNode(true);
 }
 
+
 function createProductCard(product) {
   
   const { productId, productName, description, brand, price, discount, imageURLs } = product;
@@ -24,10 +25,6 @@ function createProductCard(product) {
   const discountedPrice = (price * (1 - discount)).toFixed(2);
 
   const template = getTemplate(product);
-
-
-  // Add product ID as a data attribute to the card div for easy access
-  template.querySelector('.card').dataset.productId = productId;
 
   // Populate template
   template.querySelector('.card-img-top').src = imageUrl;
@@ -45,26 +42,44 @@ function createProductCard(product) {
     template.querySelector('.product-price').textContent = `$${price}`;
   }
 
-   // Add onclick handler to the .card element
-   template.querySelector('.card').onclick = function() {
-    /*
-    const productId = template.querySelector('.card').dataset.productId;
-    */
-   
-    // Debug logs
-    console.log('Clicked Product:', product);       // Check if product exists
-    console.log('Saving productId:', productId);    // Verify the productId is captured
-
-    // Save to localStorage
-    localStorage.setItem('currentProductId', productId);
-    
-    // Redirect to sproduct.html
-    window.location.href = 'sproduct.html';
-  };
-
-
+  // Add the productId as a hidden data attribute on the card element
+  const card = template.querySelector('.product-card'); 
+  card.dataset.productId = productId;
+  
   return template;
 }
+
+
+function addProductCardEventListeners() {
+  const cards = document.querySelectorAll('.product-card');  // Select all cards
+  
+  if (cards.length === 0) {
+      console.log('No product cards found.');
+      return;
+  }
+
+  cards.forEach(card => {
+      card.addEventListener('click', function () {
+          const productId = card.dataset.productId;  // Get productId from dataset
+          
+          if (!productId) {
+              console.log('No productId found on card.');
+              return;
+          }
+
+          console.log('Clicked productId:', productId);  // Debug: Verify correct productId
+          
+          // Save productId to localStorage
+          localStorage.setItem('currentProductId', productId);
+
+          window.location.href = 'sproduct.html';
+          
+      });
+  });
+}
+
+
+
 
 async function displayProducts() {
   const products = await fetchProducts();
@@ -79,23 +94,21 @@ async function displayProducts() {
     try {
       const productCard = createProductCard(product);
       productContainer.appendChild(productCard);
+
     } catch (error) {
       console.error('Error creating product card:', error);
     }
+
+    // After adding the cards, add event listeners
+    addProductCardEventListeners();
+
   });
 }
 
 
-function redirectToProductPage(card) {
-  const productId = card.dataset.productId; // Get the product ID from the data attribute
-  const url = new URL('sproduct.html', window.location.href); // Create a URL object for sproduct.html
-  url.searchParams.set('productId', productId); // Append the productId as a query parameter
-  window.location.href = url; // Redirect to sproduct.html with the productId in the URL
-}
 
 
+document.addEventListener('DOMContentLoaded', ()=> {
+  displayProducts(); 
+})
 
-document.addEventListener('DOMContentLoaded', displayProducts);
-/*
-document.addEventListener('DOMContentLoaded', redirectToProductPage);
-*/
