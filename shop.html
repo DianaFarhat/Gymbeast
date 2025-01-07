@@ -54,12 +54,12 @@
     
       
   
-    <section id="product1" class="section-p1 container">
+    <section id="product1" class="section-p1 container" >
         <div class="row g-4">
            <!-- Product Item -->
            <template id="product-template">
             <div class="col-12 col-lg-4">
-              <div class="pro card h-100 product-card">
+              <div class="pro card h-100 product-card" onclick="redirectToProductPage(this)">
                 <img src="" alt="Product Image"  class="card-img-top embed-responsive-item" >
                 <div class="card-body">
                   <h5 class="product-name card-title"></h5>
@@ -73,7 +73,7 @@
              <!-- Product Item With Discount -->
             <template id="discounted-product-template">
                 <div class="col-12 col-lg-4">
-                  <div class="pro card h-100 product-card">
+                  <div class="pro card h-100 product-card" onclick="redirectToProductPage(this)">
                     <img src="" alt="Product Image"  class="card-img-top embed-responsive-item" >
                     <div class="card-body">
                       <h5 class="product-name card-title"></h5>

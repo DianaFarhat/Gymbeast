@@ -67,4 +67,13 @@ async function displayProducts() {
   });
 }
 
+
+function redirectToProductPage(card) {
+  const productId = card.dataset.productId; // Get the product ID from the data attribute
+  localStorage.setItem('currentProductId', productId); // Save it in localStorage
+  window.location.href = 'sproduct.html'; // Redirect to sproduct.html
+}
+
+
 document.addEventListener('DOMContentLoaded', displayProducts);
+document.addEventListener('DOMContentLoaded', redirectToProductPage);
