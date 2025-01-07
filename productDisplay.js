@@ -69,9 +69,11 @@ function addProductCardEventListeners() {
 
           console.log('Clicked productId:', productId);  // Debug: Verify correct productId
 
-          window.location.href = 'sproduct.html';
+          // Save productId to localStorage
+          localStorage.setItem('currentProductId', productId);
 
-          displayProductDetails(productId);
+          // Redirect to the product details page
+          window.location.href = 'sproduct.html';
           
       });
   });
