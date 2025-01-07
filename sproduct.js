@@ -1,6 +1,6 @@
 async function displayProductDetails() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('productId');
+    // Get the product ID from localStorage
+    const productId = localStorage.getItem('currentProductId');
 
     
     if (!productId) {
@@ -141,4 +141,5 @@ document.getElementById('review-form').addEventListener('submit', function(e) {
     e.target.reset();
 });
 
-displayProductDetails();
+
+document.addEventListener('DOMContentLoaded', displayProductDetails);

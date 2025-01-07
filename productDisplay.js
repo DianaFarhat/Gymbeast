@@ -45,6 +45,24 @@ function createProductCard(product) {
     template.querySelector('.product-price').textContent = `$${price}`;
   }
 
+   // Add onclick handler to the .card element
+   template.querySelector('.card').onclick = function() {
+    /*
+    const productId = template.querySelector('.card').dataset.productId;
+    */
+   
+    // Debug logs
+    console.log('Clicked Product:', product);       // Check if product exists
+    console.log('Saving productId:', productId);    // Verify the productId is captured
+
+    // Save to localStorage
+    localStorage.setItem('currentProductId', productId);
+    
+    // Redirect to sproduct.html
+    window.location.href = 'sproduct.html';
+  };
+
+
   return template;
 }
 
