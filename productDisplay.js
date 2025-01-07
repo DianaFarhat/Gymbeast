@@ -70,10 +70,14 @@ async function displayProducts() {
 
 function redirectToProductPage(card) {
   const productId = card.dataset.productId; // Get the product ID from the data attribute
-  localStorage.setItem('currentProductId', productId); // Save it in localStorage
-  window.location.href = 'sproduct.html'; // Redirect to sproduct.html
+  const url = new URL('sproduct.html', window.location.href); // Create a URL object for sproduct.html
+  url.searchParams.set('productId', productId); // Append the productId as a query parameter
+  window.location.href = url; // Redirect to sproduct.html with the productId in the URL
 }
 
 
+
 document.addEventListener('DOMContentLoaded', displayProducts);
+/*
 document.addEventListener('DOMContentLoaded', redirectToProductPage);
+*/
