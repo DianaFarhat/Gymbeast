@@ -68,11 +68,10 @@ function addProductCardEventListeners() {
           }
 
           console.log('Clicked productId:', productId);  // Debug: Verify correct productId
-          
-          // Save productId to localStorage
-          localStorage.setItem('currentProductId', productId);
 
           window.location.href = 'sproduct.html';
+
+          displayProductDetails(productId);
           
       });
   });

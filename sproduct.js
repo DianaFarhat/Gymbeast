@@ -1,7 +1,5 @@
-async function displayProductDetails() {    
-
-    // Get productId from localStorage
-    const productId = localStorage.getItem('currentProductId');
+async function displayProductDetails(productId) {    
+    console.log("Id passed: "+ productId);
 
     if (!productId) {
         document.getElementById('product-details').innerHTML = '<h1>Product not found</h1>';
