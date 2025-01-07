@@ -18,19 +18,16 @@ function getTemplate(product) {
 }
 
 function createProductCard(product) {
-  const {
-    productName = 'Unknown',
-    description = 'No description available',
-    brand = 'Unknown Brand',
-    price = 0,
-    discount = 0,
-    imageURLs = {}
-  } = product;
-
+  
+  const { productId, productName, description, brand, price, discount, imageURLs } = product;
   const imageUrl = Object.values(imageURLs)[0] || 'placeholder.jpg'; // Fallback image
   const discountedPrice = (price * (1 - discount)).toFixed(2);
 
   const template = getTemplate(product);
+
+
+  // Add product ID as a data attribute to the card div for easy access
+  template.querySelector('.card').dataset.productId = productId;
 
   // Populate template
   template.querySelector('.card-img-top').src = imageUrl;
