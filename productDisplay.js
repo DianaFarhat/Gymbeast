@@ -73,7 +73,7 @@ function addProductCardEventListeners() {
           localStorage.setItem('currentProductId', productId);
 
           // Redirect to the product details page
-          window.location.href = 'sproduct.html';
+          window.location.href = `sproduct.html?id=${productId}`;
           
       });
   });

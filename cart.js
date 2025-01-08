@@ -6,7 +6,7 @@ async function fetchProducts() {
         return data;
     } catch (error) {
         console.error('Error fetching products:', error);
-        return { products: [], bundles: [] };
+        return []; // Updated to return an empty array instead of an object with products and bundles
     }
 }
 
@@ -15,47 +15,78 @@ if (!localStorage.getItem('cart')) {
     localStorage.setItem('cart', JSON.stringify([]));
 }
 
-// Function to add a product to the cart
-async function addToCart(productId, color, size, bundleId = null) {
-    const cart = JSON.parse(localStorage.getItem('cart'));
-    const productsData = await fetchProducts();
-    
-    if (bundleId) {
-        const bundle = productsData.bundles.find(b => b.id === bundleId);
-        if (bundle) {
-            bundle.productIds.forEach(pid => {
-                const product = productsData.products.find(p => p.productId === pid);
-                if (product) {
-                    const existingItem = cart.find(item => item.id === pid && item.bundleId === bundleId);
-                    if (existingItem) {
-                        existingItem.quantity += 1;
-                    } else {
-                        cart.push({ id: pid, color, size, quantity: 1, bundleId });
-                    }
-                }
-            });
-        }
+/*
+async function addToCart(productId, color, size) {
+    // Retrieve the current cart or initialize an empty one
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Check if the product already exists in the cart
+    const existingItem = cart.find(item => 
+        item.id === productId && item.color === color && item.size === size
+    );
+
+    if (existingItem) {
+        // Increment quantity if product exists
+        existingItem.quantity += 1;
     } else {
-        const existingItem = cart.find(item => item.id === productId && item.color === color && item.size === size && !item.bundleId);
-        if (existingItem) {
-            existingItem.quantity += 1;
-        } else {
-            cart.push({ id: productId, color, size, quantity: 1 });
-        }
+        // Add new product to the cart
+        cart.push({ id: productId, color, size, quantity: 1 });
     }
 
+    // Update local storage
     localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Show confirmation and redirect to cart
     alert('Product added to cart!');
+}
+*/
+
+async function addToCart(productId, color, size) {
+    try {
+        // Retrieve the current cart or initialize an empty one
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        console.log('Current Cart:', cart); // Debugging: Check the initial cart contents
+
+        // Check if the product already exists in the cart
+        const existingItem = cart.find(item => 
+            item.id === productId && item.color === color && item.size === size
+        );
+
+        if (existingItem) {
+            // Increment quantity if product exists
+            existingItem.quantity += 1;
+            console.log('Updated Item:', existingItem); // Debugging
+        } else {
+            // Add new product to the cart
+            const newItem = { id: productId, color, size, quantity: 1 };
+            cart.push(newItem);
+            console.log('Added New Item:', newItem); // Debugging
+        }
+
+        // Update local storage
+        localStorage.setItem('cart', JSON.stringify(cart));
+        console.log('Updated Cart:', cart); // Debugging: Check the updated cart contents
+
+        // Show confirmation
+        alert('Product added to cart!');
+    } catch (error) {
+        console.error('Error adding to cart:', error); // Debugging: Log any errors
+    }
+}
+
+
+
+// Function to remove a product from the cart
+async function removeFromCart(productId, color, size) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart = cart.filter(item => !(item.id === productId && item.color === color && item.size === size));
+    localStorage.setItem('cart', JSON.stringify(cart));
     await displayCart();
 }
 
-// Function to remove a product from the cart
-async function removeFromCart(productId, color, size, bundleId = null) {
-    let cart = JSON.parse(localStorage.getItem('cart'));
-    cart = cart.filter(item => !(item.id === productId && item.color === color && item.size === size && item.bundleId === bundleId));
-    localStorage.setItem('cart', JSON.stringify(cart));
-    await displayCart();
-}
+
+
 
 // Function to update the quantity of a product in the cart
 async function updateQuantity(productId, color, size, newQuantity, bundleId = null) {
