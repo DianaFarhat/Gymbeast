@@ -23,6 +23,16 @@ async function displayProductDetails() {
     const sizes = Object.keys(product.stock[colors[0]]);
 
     // Inject values into HTML template
+
+    // Set Image
+    const mainImage = document.getElementById('main-product-image');
+    const imageUrl = Object.values(product.imageURLs)[0]; // Get first image URL
+    console.log("Image URL:", imageUrl); // Debugging log
+    mainImage.src = imageUrl; // Set the image source
+    mainImage.alt = product.productName; // Set alt text
+ 
+
+    document.getElementById('main-product-image').src= product.imageUrl;
     document.getElementById('product-name').innerText = product.productName;
     document.getElementById('product-description').innerText = product.description;
     document.getElementById('product-price').innerText = `$${price.toFixed(2)}`;
@@ -32,7 +42,7 @@ async function displayProductDetails() {
     document.getElementById('product-fit').innerText = product.fit;
     document.getElementById('product-gender').innerText = product.gender.join(', ');
 
-    const colorSelect = document.getElementById('color-select');
+    const colorSelect = document.getElementById('color');
     colors.forEach(color => {
         const option = document.createElement('option');
         option.value = color;
@@ -40,7 +50,7 @@ async function displayProductDetails() {
         colorSelect.appendChild(option);
     });
 
-    const sizeSelect = document.getElementById('size-select');
+    const sizeSelect = document.getElementById('size');
     sizes.forEach(size => {
         const option = document.createElement('option');
         option.value = size;
