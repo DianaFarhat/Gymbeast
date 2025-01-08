@@ -10,10 +10,45 @@
 </head>
 <body>
     <div class="container mt-5">
-        <div id="product-details">
-            <!-- Product details will be dynamically added here -->
-        </div>
-        
+        <!--Product details-->
+         <div id="product-details">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="" alt="" class="product-image" id="main-product-image">
+                    <div class="mt-3" id="color-swatches">
+                        <!-- Color swatches will be injected here -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 id="product-name"></h1>
+                    <p class="text-muted" id="product-description"></p>
+                    <h2 id="product-price"></h2>
+                    <p>Brand: <span id="product-brand"></span></p>
+                    <p>Collection: <span id="product-collection"></span></p>
+                    <p>Category: <span id="product-category"></span></p>
+                    <p>Type: <span id="product-type"></span></p>
+                    <p>Fit: <span id="product-fit"></span></p>
+                    <p>Gender: <span id="product-gender"></span></p>
+                    <form id="add-to-cart-form">
+                        <div class="mb-3">
+                            <label for="color" class="form-label">Color:</label>
+                            <select id="color" class="form-select" required>
+                                <!-- Colors will be injected here -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="size" class="form-label">Size:</label>
+                            <select id="size" class="form-select" required>
+                                <!-- Sizes will be injected here -->
+                            </select>
+                        </div>
+                        <div id="bundle-options" class="mt-4">
+                            <!-- Bundles will be injected here -->
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Add to Cart</button>
+                    </form>
+                </div>
+            </div>
         <div class="mt-5">
             <h3>Customer Reviews</h3>
             <div id="reviews">

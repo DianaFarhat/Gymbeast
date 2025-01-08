@@ -1,6 +1,5 @@
 async function displayProductDetails() {    
     const productId = localStorage.getItem('currentProductId');  // Get the productId from localStorage
-
     console.log("ProductId from localStorage: ", productId);
 
     if (!productId) {
@@ -8,8 +7,11 @@ async function displayProductDetails() {
         return;
     }
 
-    const productsData = await fetchProducts();
-    const product = productsData.products.find(p => p.productId === productId);
+    
+    // Fetch product data
+    const productsResponse = await fetch('products.json');
+    const productsData = await productsResponse.json();
+    const product = productsData.find(p => p.productId === productId);
 
     if (!product) {
         document.getElementById('product-details').innerHTML = '<h1>Product not found</h1>';
@@ -20,70 +22,53 @@ async function displayProductDetails() {
     const colors = Object.keys(product.stock);
     const sizes = Object.keys(product.stock[colors[0]]);
 
-    let bundleHtml = '';
-    const productBundles = productsData.bundles.filter(bundle => bundle.productIds.includes(productId));
-    if (productBundles.length > 0) {
-        bundleHtml = `
-            <div class="mt-4">
-                <h4>Available Bundles</h4>
-                ${productBundles.map(bundle => `
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="bundle" id="bundle-${bundle.id}" value="${bundle.id}">
-                        <label class="form-check-label" for="bundle-${bundle.id}">
-                            ${bundle.name} - $${(product.price * (1 - bundle.discount)).toFixed(2)}
-                            <small class="text-muted">(Save ${(bundle.discount * 100).toFixed(0)}%)</small>
-                        </label>
-                    </div>
-                `).join('')}
-            </div>
-        `;
-    }
+    // Inject values into HTML template
+    document.getElementById('product-name').innerText = product.productName;
+    document.getElementById('product-description').innerText = product.description;
+    document.getElementById('product-price').innerText = `$${price.toFixed(2)}`;
+    document.getElementById('product-brand').innerText = product.brand;
+    document.getElementById('product-category').innerText = `${product.category} > ${product.subCategory}`;
+    document.getElementById('product-type').innerText = product.type.join(', ');
+    document.getElementById('product-fit').innerText = product.fit;
+    document.getElementById('product-gender').innerText = product.gender.join(', ');
 
-    const productDetailsHtml = `
-        <div class="row">
-            <div class="col-md-6">
-                <img src="${Object.values(product.imageURLs)[0]}" alt="${product.productName}" class="product-image" id="main-product-image">
-                <div class="mt-3">
-                    ${colors.map(color => `
-                        <span class="color-swatch" style="background-color: ${color};" onclick="changeImage('${product.imageURLs[color]}', this)"></span>
-                    `).join('')}
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h1>${product.productName}</h1>
-                <p class="text-muted">${product.description}</p>
-                <h2>
-                    $${price.toFixed(2)}
-                    ${product.discount > 0 ? `<small><s class="text-muted">$${product.price.toFixed(2)}</s></small>` : ''}
-                </h2>
-                <p>Brand: ${product.brand}</p>
-                <p>Collection: ${product.collections}</p>
-                <p>Category: ${product.category} > ${product.subCategory}</p>
-                <p>Type: ${product.type.join(', ')}</p>
-                <p>Fit: ${product.fit}</p>
-                <p>Gender: ${product.gender.join(', ')}</p>
-                <form id="add-to-cart-form">
-                    <div class="mb-3">
-                        <label for="color" class="form-label">Color:</label>
-                        <select id="color" class="form-select" required>
-                            ${colors.map(color => `<option value="${color}">${color}</option>`).join('')}
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="size" class="form-label">Size:</label>
-                        <select id="size" class="form-select" required>
-                            ${sizes.map(size => `<option value="${size}">${size}</option>`).join('')}
-                        </select>
-                    </div>
-                    ${bundleHtml}
-                    <button type="submit" class="btn btn-primary mt-3">Add to Cart</button>
-                </form>
-            </div>
-        </div>
-    `;
+    const colorSelect = document.getElementById('color-select');
+    colors.forEach(color => {
+        const option = document.createElement('option');
+        option.value = color;
+        option.textContent = color;
+        colorSelect.appendChild(option);
+    });
 
-    document.getElementById('product-details').innerHTML = productDetailsHtml;
+    const sizeSelect = document.getElementById('size-select');
+    sizes.forEach(size => {
+        const option = document.createElement('option');
+        option.value = size;
+        option.textContent = size;
+        sizeSelect.appendChild(option);
+    });
 
+    // Fetch bundles data
+    const bundlesResponse = await fetch('bundles.json');
+    const bundlesData = await bundlesResponse.json();
+    const productBundles = bundlesData.filter(bundle => bundle.productIds.includes(productId));
+
+    const bundleContainer = document.getElementById('bundle-container');
+        if (productBundles.length > 0) {
+            productBundles.forEach(bundle => {
+                const bundleItem = document.createElement('div');
+                bundleItem.classList.add('form-check');
+                bundleItem.innerHTML = `
+                    <input class="form-check-input" type="radio" name="bundle" id="bundle-${bundle.id}" value="${bundle.id}">
+                    <label class="form-check-label" for="bundle-${bundle.id}">
+                        ${bundle.name} - $${(product.price * (1 - bundle.discount)).toFixed(2)}
+                        <small class="text-muted">(Save ${(bundle.discount * 100).toFixed(0)}%)</small>
+                    </label>
+                `;
+                bundleContainer.appendChild(bundleItem);
+            });
+        }
+    
     document.getElementById('add-to-cart-form').addEventListener('submit', function(e) {
         e.preventDefault();
         const color = document.getElementById('color').value;
