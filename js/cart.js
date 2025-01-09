@@ -1,7 +1,7 @@
 // Function to fetch products from JSON file
 async function fetchProducts() {
     try {
-        const response = await fetch('products.json');
+        const response = await fetch('../json/products.json');
         const data = await response.json();
         return data;
     } catch (error) {
@@ -110,9 +110,9 @@ async function displayCart() {
                 const clone = template.content.cloneNode(true);
 
                 // Populate template
-                clone.querySelector('.product-img').src =
+                clone.querySelector('.cart-product-img').src =
                     product.imageURLs[item.color] || Object.values(product.imageURLs)[0];
-                clone.querySelector('.product-img').alt = product.productName;
+                clone.querySelector('.cart-product-img').alt = product.productName;
                 clone.querySelector('.card-title').textContent = product.productName;
                 clone.querySelector('.description').textContent = product.description;
                 clone.querySelector('.details').textContent = `Color: ${item.color}, Size: ${item.size}`;

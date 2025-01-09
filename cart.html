@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart | Gymbeast</title>
-    <link rel="icon" type="image/x-icon" href="assets/icons/logo-icon.ico"> 
+    <link rel="icon" type="image/x-icon" href="../assets/icons/logo-icon.ico"> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -16,6 +16,17 @@
     
 </head>
 <body>
+    <section >
+        <div id="top-bar">
+            <a href="#">Free delivery on orders over $150!</a>
+        </div>
+    </section>
+    <section id="header">
+        
+    </section>
+  
+    <section>
+          
     <div class="container mt-5">
         <h1 class="mb-4">Your Cart</h1>
         <div class="row">
@@ -71,14 +82,20 @@
             </div>
         </div>
     </div>
+    </section>
 
+    <section id="footer"></section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="cart.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
     <script>
         // Call displayCart when the page loads
         document.addEventListener('DOMContentLoaded', function() {
             displayCart();
         });
+    </script>
+    <script>
+        loadNavbarAndFooter();
     </script>
 </body>
 </html>

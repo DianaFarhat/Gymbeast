@@ -12,7 +12,7 @@ async function displayProductDetails() {
     }
 
     // Fetch product data
-    const productsResponse = await fetch('products.json');
+    const productsResponse = await fetch('../json/products.json');
     const productsData = await productsResponse.json();
     const product = productsData.find(p => p.productId === productId);
 
@@ -60,7 +60,7 @@ async function displayProductDetails() {
     });
 
     // Fetch bundles data
-    const bundlesResponse = await fetch('bundles.json');
+    const bundlesResponse = await fetch('../json/bundles.json');
     const bundlesData = await bundlesResponse.json();
 
     // Check if the product is part of any bundle

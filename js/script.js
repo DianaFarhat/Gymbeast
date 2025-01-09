@@ -21,7 +21,7 @@ if (close) {
 
 function loadNavbarAndFooter() {
   document.addEventListener("DOMContentLoaded", function() {
-    fetch("shared_layout.html")
+    fetch("../shared_layout.html")
       .then(response => response.text())
       .then(data => {
         // Create a temporary DOM parser
