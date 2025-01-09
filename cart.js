@@ -64,14 +64,14 @@ async function removeFromCart(productId, color, size) {
 
 
 // Function to update the quantity of a product in the cart
-async function updateQuantity(productId, color, size, newQuantity, bundleId = null) {
+async function updateQuantity(productId, color, size, newQuantity) {
     const cart = JSON.parse(localStorage.getItem('cart'));
     const item = cart.find(item => item.id === productId && item.color === color && item.size === size && item.bundleId === bundleId);
     
     if (item) {
         item.quantity = parseInt(newQuantity);
         if (item.quantity <= 0) {
-            await removeFromCart(productId, color, size, bundleId);
+            await removeFromCart(productId, color, size);
         } else {
             localStorage.setItem('cart', JSON.stringify(cart));
             await displayCart();
