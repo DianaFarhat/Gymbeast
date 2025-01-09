@@ -62,7 +62,7 @@ async function removeFromCart(productId, color, size) {
 
 
 
-
+/*
 // Function to update the quantity of a product in the cart
 async function updateQuantity(productId, color, size, newQuantity) {
     const cart = JSON.parse(localStorage.getItem('cart'));
@@ -78,6 +78,34 @@ async function updateQuantity(productId, color, size, newQuantity) {
         }
     }
 }
+*/
+
+// Function to update the quantity of a product in the cart
+async function updateQuantity(productId, color, size, newQuantity) {
+    // Fetch the current cart from localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    // Find the item in the cart based on productId, color, and size
+    const item = cart.find(item => item.id === productId && item.color === color && item.size === size);
+    
+    if (item) {
+        // Update the item's quantity
+        item.quantity = parseInt(newQuantity);
+
+        // Remove the item if the quantity is zero or less
+        if (item.quantity <= 0) {
+            await removeFromCart(productId, color, size);
+        } else {
+            // Update the cart in localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+            // Refresh the cart display
+            await displayCart();
+        }
+    } else {
+        console.warn(`Product with ID ${productId}, color ${color}, and size ${size} not found in the cart.`);
+    }
+}
+
 
 
 async function displayCart() {
