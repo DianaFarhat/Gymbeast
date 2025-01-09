@@ -1,7 +1,10 @@
 
 async function displayProductDetails() {
-    const productId = localStorage.getItem('currentProductId');  // Get the productId from localStorage
-    console.log("ProductId from localStorage: ", productId);
+
+    // Extract the productId from the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    console.log("ProductId from URL: ", productId);
 
     if (!productId) {
         document.getElementById('product-details').innerHTML = '<h1>Product not found</h1>';
